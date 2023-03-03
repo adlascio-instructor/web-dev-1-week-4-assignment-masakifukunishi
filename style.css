@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+body {
+  font-size: 18px;
+  color: #afb6c2;
+  background-color: #191816;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+h1 {
+  color: #d4ccb6;
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 1rem;
+  background-color: #24221f;
+  padding: 2rem 5rem;
+  border-radius: 0.5rem;
+}
+
+.main {
+  margin: 2rem;
+}
+
+.title {
+  display: flex;
+}
+
+.title img {
+  margin-right: 0.5rem;
+}
