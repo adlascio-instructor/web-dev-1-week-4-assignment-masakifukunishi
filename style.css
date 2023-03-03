@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Poppins;
+  font-family: "Bai Jamjuree", sans-serif;
 }
 
 body {
@@ -20,10 +21,10 @@ h1 {
 
 form {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   margin: 5rem 1rem;
+  padding: 2rem 0;
   background-color: #24221f;
-  padding: 2rem 5rem;
   border-radius: 0.5rem;
 }
 
@@ -37,4 +38,60 @@ form {
 
 .title img {
   margin-right: 0.5rem;
+}
+
+.form-inner {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-inner .description {
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.form-inner input[type="text"],
+input[type="password"] {
+  height: 2rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-radius: 0.2rem;
+  border: 2px solid gray;
+}
+
+.form-inner input[type="text"]:focus,
+input[type="password"]:focus {
+  border-radius: 0.2rem;
+  outline: none;
+  border: 3px solid #ffc632;
+}
+
+.form-inner label {
+  margin-bottom: 0.2rem;
+}
+
+.form-inner a {
+  color: #ffc632;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.form-inner .login-btn {
+  height: 2.2rem;
+  background-color: #ffc632;
+  border: none;
+  border-radius: 0.1rem;
+  margin: 0.8rem 0;
+}
+
+.form-inner .signup-message {
+  color: #ffc632;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.form-inner .remind-forgot {
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
 }

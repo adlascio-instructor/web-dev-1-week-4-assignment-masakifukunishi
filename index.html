@@ -11,20 +11,26 @@
     <div class="main">
       <img src="images/logo.svg" />
       <form>
-        <div class="title">
-          <img src="images/log-in.svg" />
-          <h1>Login</h1>
+        <div class="form-inner">
+          <div class="title">
+            <img src="images/log-in.svg" />
+            <h1>Login</h1>
+          </div>
+          <p class="description">Insert your information bellow</p>
+          <label for="email">E-mail</label>
+          <input type="text" id="email" placeholder="Type your email" />
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Type your password" />
+          <div class="remind-forgot">
+            <div>
+              <input type="checkbox" id="remind" />
+              <label for="remind">Remind me</label>
+            </div>
+            <a href="#" class="forgot">forgot my password</a>
+          </div>
+          <button type="button" class="login-btn">Login</button>
+          <p class="signup-message">Don't have an accoount?<a href="#">Sign up!</a></p>
         </div>
-        <p>Insert your information bellow</p>
-        <label>E-mail</label>
-        <input type="text" placeholder="Type your email" />
-        <label>Password</label>
-        <input type="password" placeholder="Type your password" />
-        <input type="checkbox" />
-        <label>Remind me</label>
-        <p>forgot my password</p>
-        <button type="button">Login</button>
-        <p>Don't have an accoount?Sign up!</p>
       </form>
     </div>
     <div>
