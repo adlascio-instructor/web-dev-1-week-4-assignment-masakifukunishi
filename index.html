@@ -7,5 +7,43 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="main">
+      <img src="images/logo.svg" />
+      <form>
+        <div class="form-inner">
+          <div class="title">
+            <img src="images/log-in.svg" />
+            <h1>Login</h1>
+          </div>
+          <p class="description">Insert your information bellow</p>
+          <label for="email">E-mail</label>
+          <div class="input-box input-mail">
+            <input type="text" id="email" placeholder="Type your email" />
+          </div>
+          <label for="password">Password</label>
+          <div class="input-box input-password">
+            <input
+              type="password"
+              pattern="(?=.*?[a-z])(?=.*?[A-Z])(?=.*?\d)[a-zA-Z\d]{6,}"
+              id="password"
+              placeholder="Type your password"
+            />
+          </div>
+          <div class="remind-forgot">
+            <div>
+              <input type="checkbox" id="remind" />
+              <label for="remind">Remind me</label>
+            </div>
+            <a href="#" class="forgot">forgot my password</a>
+          </div>
+          <button type="submit" class="login-btn">Login</button>
+          <p class="signup-message">Don't have an accoount?<a href="#">Sign up!</a></p>
+        </div>
+      </form>
+    </div>
+    <div>
+      <img src="images/side-image.jpg" />
+    </div>
+  </body>
 </html>
