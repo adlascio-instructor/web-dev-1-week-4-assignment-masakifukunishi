@@ -57,6 +57,8 @@ input[type="password"] {
   background-color: transparent;
   border-radius: 0.2rem;
   border: 2px solid gray;
+  padding: 1rem 0 1rem 2em;
+  width: 100%;
 }
 
 .form-inner input[type="text"]:focus,
@@ -66,6 +68,46 @@ input[type="password"]:focus {
   border: 3px solid #ffc632;
 }
 
+.form-inner .input-box {
+  display: inline-block;
+  position: relative;
+}
+
+.form-inner .input-box::before {
+  content: "";
+  width: 1.1rem;
+  height: 1.1rem;
+  display: inline-block;
+  position: absolute;
+  top: 0.6rem;
+  left: 0.4rem;
+}
+.form-inner .input-mail::before {
+  background: url(images/mail.svg) no-repeat center center / auto 100%;
+}
+
+.form-inner .input-mail:focus-within::before {
+  background: url(images/mail-focus.svg) no-repeat center center / auto 100%;
+}
+
+.form-inner .input-password::before {
+  background: url(images/lock.svg) no-repeat center center / auto 100%;
+}
+
+.form-inner .input-password:focus-within::before {
+  background: url(images/lock-focus.svg) no-repeat center center / auto 100%;
+}
+
+.form-inner .input-password::after {
+  content: "";
+  width: 1.1rem;
+  height: 1.1rem;
+  display: inline-block;
+  position: absolute;
+  top: 0.6rem;
+  right: 0.4rem;
+  background: url(images/eye.svg) no-repeat center center / auto 100%;
+}
 .form-inner label {
   margin-bottom: 0.2rem;
 }
@@ -82,6 +124,7 @@ input[type="password"]:focus {
   border: none;
   border-radius: 0.1rem;
   margin: 0.8rem 0;
+  cursor: pointer;
 }
 
 .form-inner .signup-message {
