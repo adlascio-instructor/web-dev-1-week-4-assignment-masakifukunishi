@@ -112,6 +112,9 @@ input[type="password"]:focus {
   margin-bottom: 0.2rem;
 }
 
+.form-inner input[type="checkbox"] {
+  accent-color: #ffc632;
+}
 .form-inner a {
   color: #ffc632;
   font-weight: bold;
@@ -137,4 +140,20 @@ input[type="password"]:focus {
   font-size: 0.9rem;
   display: flex;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  .bg-right-image {
+    display: none;
+  }
+  form {
+    margin: 2rem 0.2rem;
+    padding: 2rem 0;
+    background-color: #191816;
+    border-radius: 0.5rem;
+    display: block;
+  }
 }
